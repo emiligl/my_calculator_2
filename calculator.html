@@ -1,36 +1,42 @@
-<!DOCTYPE html>
-<html>
+<<<<<<< HEAD <!DOCTYPE html>
+    <html>
 
-<head>
-    <title>Calculator</title>
-    <meta charset="utf-8">
-    <script type="text/javascript">
-        function cube() {
-            var num = document.getElementById("n1");
-            num.value = Math.pow(num.value, 3);
-        }
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            function inverse() {
+                var num = document.getElementById("n1");
+                num.value = (1 / num.value);
+            }
 
-        function square() {
-            var num = document.getElementById("n1");
-            num.value = Math.pow(num.value, 2);
-        }
+            function cube() {
+                var num = document.getElementById("n1");
+                num.value = Math.pow(num.value, 3);
+            }
 
-        function inverse() {
-            var num = document.getElementById("n1");
-            num.value = (1 / num.value);
-        }
-    </script>
-</head>
+            function square() {
+                var num = document.getElementById("n1");
+                num.value = Math.pow(num.value, 2);
+            }
 
-<body>
-    <h1>Calculadora de ...... Emilio De La Iglesia ......</h1>
-    Number:
-    <input type="text" id="n1">
-    <p>
-        <button onclick="cube()"> x^3 </button>
-        <button onclick="square()"> x^2 </button>
-        <button onclick="inverse()"> 1/x </button>
-    </p>
-</body>
+            function cuartaPot() {
+                var num = document.getElementById("n1");
+                num.value = Math.pow(num.value, 4);
+            }
+        </script>
+    </head>
 
-</html>
+    <body>
+        <h1>Calculadora de ...... Emilio De La Iglesia ......</h1>
+        Number:
+        <input type="text" id="n1">
+        <p>
+            <button onclick="inverse()"> 1/x </button>
+            <button onclick="square()"> x^2 </button>
+            <button onclick="cube()"> x^3 </button>
+            <button onclick="cuartaPot()"> x^4 </button>
+        </p>
+    </body>
+
+    </html>
